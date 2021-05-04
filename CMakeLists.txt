@@ -12,3 +12,6 @@ if (${CMAKE_VERSION} VERSION_LESS "3.8.0")
 else()
   target_compile_features(nlohmann_json INTERFACE cxx_std_11)
 endif()
+
+find_package(catkin REQUIRED)
+catkin_package(INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include LIBRARIES nlohmann_json)

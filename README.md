@@ -1,3 +1,15 @@
+# ROS package for nlohmann/json
+Based on the the light-weight (no tests etc.) fetchcontent-version: [ArthurSonzogni/nlohmann_json_cmake_fetchcontent](https://github.com/ArthurSonzogni/nlohmann_json_cmake_fetchcontent)
+
+## Usage
+~~~cmake
+find_package(nlohmann_json)
+...
+include_directories(... ${nlohmann_json_INCLUDE_DIRS})
+target_link_libraries(foo PRIVATE nlohmann_json)
+~~~
+
+Original readme:
 # Release-tracking repository for nlohmann/json
 
 This repository is based on: [astoeckel/json](https://github.com/astoeckel/json).
